@@ -3,7 +3,7 @@
 
 def main() -> None:
     # Перевірка роботи функції привітання
-    greeting = greet_user("Студент")
+    greeting = greet_user("Влад")
     print(greeting)
 
     # Перевірка роботи функції додавання
