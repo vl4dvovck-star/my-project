@@ -1,6 +1,18 @@
-﻿import requests
+﻿from lib import add_numbers, greet_user, multiply_numbers
 
-response = requests.get("https://httpbin.org/get")
-print("Status code:", response.status_code)
-print("Response JSON:")
-print(response.json())
+
+def main() -> None:
+    greeting = greet_user("Влад")
+    print(greeting)
+
+    a, b = 5.0, 3.0
+    sum_result = add_numbers(a, b)
+    print(f"Сума {a} + {b} = {sum_result}")
+
+    # Перевірка роботи функції множення
+    mult_result = multiply_numbers(a, b)
+    print(f"Добуток {a} * {b} = {mult_result}")
+
+
+if __name__ == "__main__":
+    main()
