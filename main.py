@@ -2,11 +2,9 @@
 
 
 def main() -> None:
-    # Перевірка роботи функції привітання
     greeting = greet_user("Влад")
     print(greeting)
 
-    # Перевірка роботи функції додавання
     a, b = 5.0, 3.0
     sum_result = add_numbers(a, b)
     print(f"Сума {a} + {b} = {sum_result}")
